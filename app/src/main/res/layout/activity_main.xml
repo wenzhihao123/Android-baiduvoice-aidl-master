@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:src="@mipmap/timg"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+    <com.wzh.baiduvoiceaidl.WaveViewV1
+        android:id="@+id/wave"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent" />
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:gravity="top|left"
+        android:visibility="visible"
+        android:hint="输入需要朗读的内容"
+        android:layout_height="100dp" />
+    <Button
+        android:id="@+id/speak"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/input"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        android:text="开始朗读" />
+
+</RelativeLayout>
